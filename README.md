@@ -95,7 +95,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
   - **`A`**: Move Left
   - **`S`**: Move Down
   - **`D`**: Move Right
-  - **Space**: Start the game from the menu screen
+  - **`Space`**: Start the game from the menu screen
 
   **Description**: These keys on the PS2 keyboard allow the human character to navigate through the facility. Each key corresponds to a specific direction, enabling smooth and precise movement.
 
