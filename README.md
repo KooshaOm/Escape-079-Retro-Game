@@ -101,10 +101,10 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 
 #### AI Character
 - **Gate Placement and Management:**
-  - **KEY0**: Shift to next door
-  - **KEY1**: Shift to previous door
-  - **KEY2**: Lock highlighted door
-  - **KEY3**: Blackout (turn off lights)
+  - **`KEY0`**: Shift to next door
+  - **`KEY1`**: Shift to previous door
+  - **`KEY2`**: Lock highlighted door
+  - **`KEY3`**: Blackout (turn off lights)
 
   **Description**: Use these keys to manage gates and blackout abilities. Gates can be placed to block paths, and the blackout ability makes power-ups temporarily invisible.
 
