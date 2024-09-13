@@ -124,9 +124,8 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 
 
 
-## Contribution
+## Key Contributions
 
-### Koosha
 - **Player Wins End Game Logic**: Implemented endgame sequence with dynamic 10-bit pin generation and smooth transition to the end screen.
 - **Computer Ability Interactive UI Features**: Developed interactive UI elements showcasing the computer player’s abilities.
 - **Player Sprints & Movement**: Enabled smooth player movement with WASD controls and orientation updates.
@@ -134,14 +133,6 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 - **Hex Game Counter**: Integrated HEX displays for game time countdown on the FPGA board.
 - **Keyboard Mapping Implementation**: Adapted keyboard inputs for game controls and functionality.
 - **Pick-Up Collection Logic**: Ensured accurate pick-up registration.
-
-### Sepehr
-- **Sound Features**: Processed sound files, integrated them with hardware, and implemented real-time sound rendering.
-- **End Screen Sound and Graphics**: Developed end sequences with sound and graphical effects.
-- **Initial Player Movement**: Implemented primitive player rendering and movement.
-- **Keycard & Blackout Rendering Logic**: Managed rendering of keycards and blackout effects.
-- **UI Game Counter and Keycard Counter**: Designed and implemented UI for game and keycard counters.
-- **Overall Map Design**: Designed the map layout and positions of keycards and doors.
 
 
 
