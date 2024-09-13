@@ -9,7 +9,7 @@
    - [Controls](#controls)
    - [Gameplay](#gameplay)
 6. [Examples and Demos](#examples-and-demos)
-7. [Contribution](#contribution)
+7. [Key Contributions](#key-contributions)
 8. [Licensing](#licensing)
 9. [Contact Information](#contact-information)
 10. [Acknowledgments](#acknowledgments)
