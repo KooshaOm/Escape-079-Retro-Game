@@ -27,7 +27,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 
 - **Human Character**:
   - **Movement**: Controlled via WASD keys on a PS2 keyboard.
-  - **Power-ups**: Collect three scattered power-ups to enhance speed.
+  - **Power-ups**: Collect eight (8) scattered power-ups to enhance speed.
   - **Endgame Challenge**: Solve a 10-bit binary code displayed on LEDs using switches within a time limit.
 
 - **AI Character**:
