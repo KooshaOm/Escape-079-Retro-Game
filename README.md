@@ -66,6 +66,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 - **Setup Instructions**:
   1. **CPUlator Computer System Simulator**:
      - [Visit CPUlator](https://cpulator.01xz.net/?sys=nios-de1soc).
+     - Set `Language:` to `C` by clicking on the dropdown menu at the top of the UI.
      - Download the `concatenatedMainFile.c` file from the repository.
      - Copy the source code from the file and paste it into the CPUlator simulator.
 
