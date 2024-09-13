@@ -70,6 +70,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
      - Download the `concatenatedMainFile.c` file from the repository.
      - Copy the source code from the file and paste it into the CPUlator simulator.
      - Click on `Compile and Load` button at the top to compile the code.
+     - Uncheck all boxes under `Debugging Checks` section located on the left.
      - Press `Continue` button at the top to run the code.
      - Refer to `Devices` section on the right to use I/O devices.
 
