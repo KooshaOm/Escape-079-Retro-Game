@@ -66,8 +66,8 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 - **Setup Instructions**:
   1. **CPUlator Computer System Simulator**:
      - [Visit CPUlator](https://cpulator.01xz.net/?sys=nios-de1soc).
-     - Download all `.c` files from the repository.
-     - Concatenate the code into one file and paste it into the CPUlator simulator.
+     - Download the `concatenatedMainFile.c` file from the repository.
+     - Copy the source code from the file and paste it into the CPUlator simulator.
 
   2. **Intel Quartus Prime Software and DE1-SoC Board**:
      - Clone the repository:
@@ -79,7 +79,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
        cd Escape079
        ```
      - Create a new project in Intel Quartus Prime.
-     - Add all `.c` files to the project.
+     - Add all `.c` files (except `concatenatedMainFile.c`) to the project.
      - Compile the code and upload it to the DE1-SoC board.
      - Connect the PS2 keyboard, speakers, and VGA display to the DE1-SoC board.
 
