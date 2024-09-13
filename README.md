@@ -32,7 +32,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
 
 - **AI Character**:
   - **Gate Placement**: Blocks paths with gates, indicated by a cyan marker that turns red upon confirmation.
-  - **Blackout Ability**: Temporarily renders power-ups invisible with a 30-second cooldown.
+  - **Blackout Ability**: Temporarily renders power-ups invisible with a 3-second cooldown.
 
 - **Gameplay Mechanics**:
   - **Timer**: Both players have 120 seconds to achieve their goals.
