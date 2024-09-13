@@ -114,7 +114,7 @@ Escape 079 is a 2-player arcade-style game designed for the Intel DE1-SoC FPGA b
   **Description**: Use these keys to manage gates and blackout abilities. Gates can be placed to block paths, and the blackout ability makes power-ups temporarily invisible.
 
 ### Gameplay
-- **Human Character**: Collect all three power-ups scattered across the map and solve the 10-bit binary code displayed on the LEDs using switches before time runs out.
+- **Human Character**: Collect all eight (8) power-ups scattered across the map and solve the 10-bit binary code displayed on the LEDs using switches before time runs out.
 - **AI Character**: Use strategic placement of gates and blackouts to prevent the human character from achieving their objectives within the 120-second time limit.
 
 
