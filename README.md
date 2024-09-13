@@ -183,13 +183,13 @@ This section showcases various gameplay scenarios in **Escape 079** with accompa
 
 ![HEX Display Timer](media/hex_display_counter.png)
 
-**Description**: The HEX display shows the remaining time out of the 120 seconds for the match. This image demonstrates how the game time is tracked and displayed.
+**Description**: The HEX display shows the remaining time out of the 120 seconds for the match. The time is also shown at the top right of the map, making it more accessible for both players to be aware of the remaining time.
 
 ---
 
 ### 9. Entering Binary Pin
 
-![Entering Binary Pin](entering_pin_on_switches.png)
+![Entering Binary Pin](media/entering_pin_on_switches.png)
 
 **Description**: The human character is entering the 10-bit binary pin using the switches. Each LED position (lit or off) corresponds to the switch setting needed to match the binary code.
 
