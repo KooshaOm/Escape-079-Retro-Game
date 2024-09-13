@@ -151,7 +151,7 @@ This section showcases various gameplay scenarios in **Escape 079** with accompa
 
 ![Gate Confirmation](media/gate_locked_ability.png)
 
-**Description**: The AI character confirms and builds a gate, which is shown in red. The lock icon at the top changes from open to closed, indicating that the gate blocking ability has been used.
+**Description**: The AI character confirms and builds a gate, which is shown in red. The lock icon at the top changes from open to closed, indicating that the gate-blocking ability has been used.
 
 ---
 
@@ -167,7 +167,7 @@ This section showcases various gameplay scenarios in **Escape 079** with accompa
 
 ![Blackout Effect](media/blackout_ability.png)
 
-**Description**: The AI character activates the blackout ability, making all power-ups invisible. This screenshot illustrates the temporary obstacle imposed on the human player.
+**Description**: The AI character activates the blackout ability, making all power-ups invisible. Notice that the lightbulb icon at the top turned off, indicating that the blackout ability was used. This screenshot illustrates the temporary constraint imposed on the human player.
 
 ---
 
