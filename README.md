@@ -54,9 +54,7 @@ A key challenge was integrating these I/O devices with game logic, particularly 
 - **PS2 Keyboard**: Custom handling for WASD inputs.
 - **LEDs and Switches**: Display binary codes and handle user inputs.
 
-### Challenges and Solutions:
-- **Player Detection**: Improved collision detection algorithms.
-- **I/O Device Coordination**: Optimized code to manage simultaneous I/O operations.
+
 
 ## Installation and Setup
 
@@ -243,4 +241,4 @@ For any inquiries or feedback, please reach out via email.
 ## Challenges and Solutions
 
 - **Player Detection**: Enhanced collision detection algorithms for accurate movement handling.
-- **I/O Device Coordination**: Optimized code to manage multiple I/O devices, reducing latency and improving performance.
+- **I/O Device Coordination**: Conducted profiling to discover performance bottlenecks. Resolved bottlenecks by optimizing code, allowing the program to seamlessly manage multiple I/O devices simultaneously, drastically reducing latency and improving performance.
