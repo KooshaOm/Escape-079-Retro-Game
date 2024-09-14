@@ -100,17 +100,17 @@ Optimizations included drawing only dynamic elements rather than the entire scre
 
 ### Controls:
 **Human Character:**
-- **W**: Move Up
-- **A**: Move Left
-- **S**: Move Down
-- **D**: Move Right
-- **Space**: Start the game
+- **`W`**: Move Up
+- **`A`**: Move Left
+- **`S`**: Move Down
+- **`D`**: Move Right
+- **`Space`**: Start the game
 
 **AI Character:**
-- **KEY0**: Shift to next gate location
-- **KEY1**: Shift to previous gate location
-- **KEY2**: Lock highlighted gate location
-- **KEY3**: Blackout (turn off lights)
+- **`KEY0`**: Shift to next gate location
+- **`KEY1`**: Shift to previous gate location
+- **`KEY2`**: Lock highlighted gate location
+- **`KEY3`**: Blackout (turn off lights)
 
 ### Gameplay:
 - **Human Character**: Collect all 8 power-ups and solve the 10-bit binary code to escape.
