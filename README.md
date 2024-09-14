@@ -16,51 +16,47 @@
 
 ## Project Overview
 
-Escape 079 is a two-player arcade-style game designed for the Intel DE1-SoC FPGA board and implemented in C. This project aims to demonstrate the integration of fundamental Computer Organization concepts, including the use of pooling, reading/writing into status/control registers, and interacting with various I/O devices.
+Escape 079 is a two-player arcade-style game designed for the Intel DE1-SoC FPGA board and implemented in C. This project integrates fundamental Computer Organization concepts such as pooling, reading/writing into status/control registers, and interacting with various I/O devices.
 
-The game features:
-- **PS2 Keyboard** for human character movement (WASD keys).
-- **10 Red LEDs, 10 Switches, and 4 Pushbuttons** for in-game interaction.
-- **VGA Display** with double buffering to prevent screen tearing and ensure smooth graphics.
-- **Speakers** for interactive audio effects.
+### Game Features:
+- **PS2 Keyboard**: Human character movement (WASD keys).
+- **10 Red LEDs, 10 Switches, 4 Pushbuttons**: In-game interaction.
+- **VGA Display**: Double buffering for smooth graphics.
+- **Speakers**: Interactive audio effects.
 
-A key challenge was effectively integrating these I/O devices with the game logic, particularly in player detection. This involved complex logic to manage player movement, update their position, and handle collisions with other objects.
+A key challenge was integrating these I/O devices with game logic, particularly in player detection and managing complex movement and collision logic.
 
 ## Key Features
 
 ### Human Character:
-- **Movement**: Controlled via WASD keys on a PS2 keyboard.
-- **Power-ups**: Collect eight scattered power-ups to increase speed, making it harder for the AI to block paths.
-- **Endgame Challenge**: Solve a 10-bit binary code displayed on LEDs to escape the facility.
+- **Movement**: Controlled via WASD keys.
+- **Power-ups**: Collect eight to increase speed.
+- **Endgame Challenge**: Solve a 10-bit binary code displayed on LEDs to escape.
 
 ### AI Character:
-- **Gate Placement**: Blocks paths with gates, indicated by a cyan marker that turns red upon confirmation.
-- **Blackout Ability**: Temporarily makes power-ups invisible with a 3-second cooldown, creating obstacles for the human player.
+- **Gate Placement**: Blocks paths with gates.
+- **Blackout Ability**: Temporarily makes power-ups invisible.
 
 ### Gameplay Mechanics:
-- **Timer**: Both players have 120 seconds to achieve their goals.
-- **Speed Increase**: Human character's speed increases with collected power-ups, escalating the AI’s challenge.
-- **Endgame Scenarios**: Distinct win/loss screens based on game outcomes.
-
-The balance between human and AI characters is achieved by increasing the human’s speed with each power-up, making it progressively harder for the AI to block them effectively.
+- **Timer**: 120 seconds for both players.
+- **Speed Increase**: Human character's speed increases with power-ups.
+- **Endgame Scenarios**: Win/loss screens based on game outcomes.
 
 ## Technical Details
 
 ### Technologies Used:
 - **Programming Language**: C
 - **Hardware**: Intel DE1-SoC FPGA board
-- **Software**: Intel Quartus Prime for compilation and CPUlator Computer System Simulator for testing
+- **Software**: Intel Quartus Prime for compilation, CPUlator Computer System Simulator for testing
 
 ### Components:
-- **VGA Display**: Utilizes double buffering to achieve 30 fps and prevent screen tearing. Dynamic elements are managed by saving their previous and current positions, optimizing performance.
-- **PS2 Keyboard**: Custom handling of WASD inputs for smooth player movement.
-- **LEDs and Switches**: Display binary codes and receive user inputs.
+- **VGA Display**: Double buffering to achieve 30 fps.
+- **PS2 Keyboard**: Custom handling for WASD inputs.
+- **LEDs and Switches**: Display binary codes and handle user inputs.
 
 ### Challenges and Solutions:
-- **Player Detection**: Refined collision detection algorithms to handle player movement in various directions accurately.
-- **I/O Device Coordination**: Addressed latency issues by profiling and optimizing code to handle simultaneous I/O operations effectively.
-
-Optimizations included drawing only dynamic elements rather than the entire screen, significantly improving game performance.
+- **Player Detection**: Improved collision detection algorithms.
+- **I/O Device Coordination**: Optimized code to manage simultaneous I/O operations.
 
 ## Installation and Setup
 
@@ -71,16 +67,12 @@ Optimizations included drawing only dynamic elements rather than the entire scre
 - VGA Display and Speakers
 
 ### Setup Instructions:
+
 **Using CPUlator Computer System Simulator:**
 1. Visit [CPUlator](https://cpulator.01xz.net/).
-2. Set `Language:` to `C` by clicking on the dropdown menu at the top of the UI.
-3. Download the `concatenatedMainFile.c` file from the repository.
-4. Copy the source code from the file and paste it into the CPUlator simulator.
-5. Click on `Compile and Load` button at the top to compile the code.
-6. Uncheck all boxes under `Debugging Checks` section located on the left.
-7. Press `Continue` button at the top to run the code.
-8. Refer to `Devices` section on the right to use I/O devices.
-
+2. Set Language to C.
+3. Download and paste the `concatenatedMainFile.c` code into the simulator.
+4. Click `Compile and Load`, uncheck debugging options, and run the code.
 
 **Using Intel Quartus Prime Software:**
 1. Clone the repository:
@@ -99,26 +91,27 @@ Optimizations included drawing only dynamic elements rather than the entire scre
 ## Usage Instructions
 
 ### Controls:
+
 **Human Character:**
-- **`W`**: Move Up
-- **`A`**: Move Left
-- **`S`**: Move Down
-- **`D`**: Move Right
-- **`Space`**: Start the game
+- **W**: Move Up
+- **A**: Move Left
+- **S**: Move Down
+- **D**: Move Right
+- **Space**: Start the game
 
 **AI Character:**
-- **`KEY0`**: Shift to next gate location
-- **`KEY1`**: Shift to previous gate location
-- **`KEY2`**: Lock highlighted gate location
-- **`KEY3`**: Blackout (turn off lights)
+- **KEY0**: Shift to next gate location
+- **KEY1**: Shift to previous gate location
+- **KEY2**: Lock highlighted gate location
+- **KEY3**: Blackout (turn off lights)
 
 ### Gameplay:
 - **Human Character**: Collect all 8 power-ups and solve the 10-bit binary code to escape.
-- **AI Character**: Use gates and blackouts to stall the human player and prevent them from escaping.
+- **AI Character**: Use gates and blackouts to stall the human player and prevent escape.
 
-**Strategies:**
-- **Human Player**: Collect power-ups quickly to increase speed and evade AI traps. Use movement to maneuver around gates.
-- **AI Player**: Strategically place gates and use blackouts to hinder the human player’s progress and manage their time effectively.
+### Strategies:
+- **Human Player**: Collect power-ups quickly to increase speed and evade AI traps.
+- **AI Player**: Place gates and use blackouts strategically to hinder the human player.
 
 ## Examples and Demos
 
@@ -210,40 +203,39 @@ This section showcases various gameplay scenarios in **Escape 079** with accompa
 
 **Description**: If the time runs out before the human player escapes, the AI wins. This end screen is displayed when the player fails to meet the objectives in time.
 
-
-
 ## Key Contributions
 
-- **Endgame Logic**: Implemented dynamic 10-bit pin generation and smooth transition to end screens.
-- **Interactive UI**: Developed features for the computer player’s abilities and interactions.
-- **Movement and Collision**: Enabled smooth movement and collision detection with optimized algorithms.
-- **HEX Game Counter**: Integrated HEX displays for game time countdown.
+- Implemented dynamic 10-bit pin generation and endgame transitions.
+- Developed interactive UI features for AI abilities.
+- Optimized movement and collision detection.
+- Integrated HEX displays for game time countdown.
 
 ## Licensing
 
-This project is a personal educational endeavor and is not licensed for public distribution or modification. External use must credit the author (Koosha Omidian).
+This project is a personal educational endeavor. It is not licensed for public distribution or modification. External use must credit the author (Koosha Omidian).
 
 ## Contact Information
 
 Author: Koosha Omidian  
-Email: Koosha.omidian@mail.utoronto.ca  
+Email: Koosha.omidian@mail.utoronto.ca
+
 For any inquiries or feedback, please reach out via email.
 
 ## Acknowledgments
 
 - **Intel**: For providing the DE1-SoC FPGA board.
 - **CPUlator**: For offering a simulation platform.
-- **Visual Studio Code & Intel Quartus Prime**: For development and compilation tools.
-- **Partner**: Acknowledgment to my partner for their contributions to the project.
+- **Visual Studio Code & Intel Quartus Prime**: For development tools.
+- **Partner**: Acknowledgment to my partner for their contributions.
 
 ## Future Improvements
 
-- **Visual Enhancements**: Add more maps, improve graphics, and introduce higher resolution options.
-- **Audio Features**: Integrate advanced sound effects and more interactive audio elements.
-- **Extended Content**: Develop additional power-ups, abilities, and characters.
+- **Visual Enhancements**: Add more maps and improve graphics.
+- **Audio Features**: Integrate advanced sound effects.
+- **Extended Content**: Develop additional power-ups and characters.
 - **3D Implementation**: Transition to a game engine for 3D graphics and online gameplay.
 
 ## Challenges and Solutions
 
-- **Player Detection**: Refined collision detection algorithms to accurately handle player movements and interactions.
-- **I/O Device Coordination**: Optimized code to handle multiple I/O devices simultaneously, reducing latency and improving performance.
+- **Player Detection**: Enhanced collision detection algorithms for accurate movement handling.
+- **I/O Device Coordination**: Optimized code to manage multiple I/O devices, reducing latency and improving performance.
