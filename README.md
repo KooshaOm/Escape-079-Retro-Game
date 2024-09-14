@@ -122,7 +122,95 @@ Optimizations included drawing only dynamic elements rather than the entire scre
 
 ## Examples and Demos
 
-Screenshots and descriptions of key gameplay scenarios are provided to illustrate the game's mechanics and features. Each screenshot highlights different aspects of the game, such as the start screen, AI gate placement, and various gameplay states.
+This section showcases various gameplay scenarios in **Escape 079** with accompanying screenshots and descriptions to illustrate key aspects of the game.
+
+### 1. Start Screen
+
+![Start Screen](media/start_screen.png)
+
+**Description**: The start screen instructs the player to press the space button to begin the game. This screen sets the stage for the gameplay by providing initial instructions.
+
+---
+
+### 2. Initial Game State
+
+![Initial Game State](media/intial_game_conditions.png)
+
+**Description**: This screenshot shows the initial state of the game with the player positioned at the top left of the map. The 8 power-ups are scattered across the map, and the player starts exploring the environment.
+
+---
+
+### 3. AI Character Gate Placement
+
+![AI Character Gate Placement](media/gate_placeholder_ability.png)
+
+**Description**: The AI character is moving the gate indicator to a new location on the map (indicated by cyan). This screenshot shows the AI planning its strategy to block the human player.
+
+---
+
+### 4. Gate Confirmation
+
+![Gate Confirmation](media/gate_locked_ability.png)
+
+**Description**: The AI character confirms and builds a gate, which is shown in red. The lock icon at the top changes from open to closed, indicating that the gate-blocking ability has been used.
+
+---
+
+### 5. Closed Gate Obstacle
+
+![Closed Gate Obstacle](media/blocked_player.png)
+
+**Description**: The human player encounters a closed (red) gate and cannot pass through. This image demonstrates how gates block the player's path and add challenge to the game.
+
+---
+
+### 6. Blackout Effect
+
+![Blackout Effect](media/blackout_ability.png)
+
+**Description**: The AI character activates the blackout ability, making all power-ups invisible. Notice that the lightbulb icon at the top turned off, indicating that the blackout ability was used. This screenshot illustrates the temporary constraint imposed on the human player.
+
+---
+
+### 7. Power-Ups and Binary Pin
+
+![Power-Ups and Binary Pin](media/all_cards_collected.png)
+
+**Description**: The human player has collected all 8 power-ups, as shown by the count at the top right. The randomly generated 10-bit binary pin is displayed at the bottom left, and the same code is shown on the red LEDs.
+
+---
+
+### 8. HEX Display Timer
+
+![HEX Display Timer](media/hex_display_counter.png)
+
+**Description**: The HEX display shows the remaining time out of the 120 seconds for the match. The time is also shown at the top right of the map, making it more accessible for both players to be aware of the remaining time.
+
+---
+
+### 9. Entering Binary Pin
+
+![Entering Binary Pin](media/entering_pin_on_switches.png)
+
+**Description**: The human character is entering the 10-bit binary pin using the switches. Each LED position (lit or off) corresponds to the switch setting needed to match the binary code.
+
+---
+
+### 10. Player Wins End Screen
+
+![Player Wins End Screen](media/human_wins_endscreen.png)
+
+**Description**: The player successfully collected all power-ups, entered the binary pin correctly, and escaped within the time limit. This end screen celebrates the player’s victory.
+
+---
+
+### 11. AI Wins End Screen
+
+![AI Wins End Screen](media/computer_wins_endscreen.png)
+
+**Description**: If the time runs out before the human player escapes, the AI wins. This end screen is displayed when the player fails to meet the objectives in time.
+
+
 
 ## Key Contributions
 
