@@ -73,9 +73,14 @@ Optimizations included drawing only dynamic elements rather than the entire scre
 ### Setup Instructions:
 **Using CPUlator Computer System Simulator:**
 1. Visit [CPUlator](https://cpulator.01xz.net/).
-2. Set Language to C.
-3. Download and paste the `concatenatedMainFile.c` code into the simulator.
-4. Click `Compile and Load`, uncheck all debugging options, and run the code.
+2. Set `Language:` to `C` by clicking on the dropdown menu at the top of the UI.
+3. Download the `concatenatedMainFile.c` file from the repository.
+4. Copy the source code from the file and paste it into the CPUlator simulator.
+5. Click on `Compile and Load` button at the top to compile the code.
+6. Uncheck all boxes under `Debugging Checks` section located on the left.
+7. Press `Continue` button at the top to run the code.
+8. Refer to `Devices` section on the right to use I/O devices.
+
 
 **Using Intel Quartus Prime Software:**
 1. Clone the repository:
